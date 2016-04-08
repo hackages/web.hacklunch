@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<!-- <link rel="stylesheet" href="css/items&#45;quick&#45;view.css"> <!&#45;&#45; Resource style &#45;&#45;> -->
+	<!-- <link rel="stylesheet" href="css/product&#45;quick&#45;view.css"> <!&#45;&#45; Resource style &#45;&#45;> -->
+	<link rel="stylesheet" href="css/login.css"> <!-- Resource style -->
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+
+	<title>Hacklunch</title>
+</head>
+<body>
+  <header role="banner">
+    <div id="cd-logo"><a href="#0"><img src="img/cd-logo.svg" alt="Logo"></a></div>
+    <nav class="main-nav">
+      <ul>
+        <!-- inser more links here -->
+        <li><a class="cd-signin" href="#0">Sign in</a></li>
+        <li><a class="cd-signup" href="#0">Sign up</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="homepage-hero-module">
+    <div class="video-container">
+      <div class="filter"></div>
+      <video autoplay loop class="fillWidth">
+        <source src="videos/MP4/Working-Space.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+        <source src="videos/WEBM/Working-Space.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
+      </video>
+      <div class="poster hidden">
+        <!-- <img src="https://unsplash.com/photos/el2EBT7E0HQ" alt=""> -->
+      </div>
+    </div>
+  </div>
+
+	<main class="cd-main-content">
+		<div class="cd-tab-filter-wrapper">
+			<div class="cd-tab-filter">
+				<ul class="cd-filters">
+					<li class="placeholder">
+						<a data-type="all" href="#0">All</a> <!-- selected option on mobile -->
+					</li>
+					<li class="filter"><a class="selected" href="#0" data-type="all">All</a></li>
+					<li class="filter" data-filter=".technology"><a href="#0" data-type="color-1">Technology</a></li>
+					<li class="filter" data-filter=".web"><a href="#0" data-type="color-2">Project Management</a></li>
+					<li class="filter" data-filter=".security"><a href="#0" data-type="color-3">Web Security</a></li>
+				</ul> <!-- cd-filters -->
+			</div> <!-- cd-tab-filter -->
+		</div> <!-- cd-tab-filter-wrapper -->
+
+		<section class="cd-gallery">
+			<ul>
+        <li class="mix cd-item technology brussels soon">
+          <img src="img/category_typescript.jpg" alt="Item Preview">
+          <a href="#0" class="cd-trigger">Quick View</a>
+        </li> <!-- cd-item -->
+
+        <li class="mix cd-item technology antwerp soon">
+          <img src="img/category_reactJS.jpg" alt="Item Preview">
+          <a href="#0" class="cd-trigger">Quick View</a>
+        </li> <!-- cd-item -->
+
+        <li class="mix cd-item web nextmonth">
+          <img src="img/category_javascript.jpg" alt="Item Preview">
+          <a href="#0" class="cd-trigger">Quick View</a>
+        </li> <!-- cd-item -->
+
+        <li class="mix cd-itemi web security amsterdam nextweek">
+          <img src="img/category_webpack.jpg" alt="Item Preview">
+          <a href="#0" class="cd-trigger">Quick View</a>
+        </li> <!-- cd-item -->
+
+
+        <!-- <li class="mix color&#45;1 check1 radio2 option3"><img src="img/category_typescript.jpg" alt="Image 1"></li> -->
+				<!-- <li class="mix color&#45;2 check2 radio2 option2"><img src="img/category_reactJS.jpg" alt="Image 2"></li> -->
+				<!-- <li class="mix color&#45;1 check3 radio3 option1"><img src="img/img&#45;3.jpg" alt="Image 3"></li> -->
+				<!-- <li class="mix color&#45;1 check3 radio2 option4"><img src="img/img&#45;4.jpg" alt="Image 4"></li> -->
+				<!-- <li class="mix color&#45;1 check1 radio3 option2"><img src="img/img&#45;5.jpg" alt="Image 5"></li> -->
+				<!-- <li class="mix color&#45;2 check2 radio3 option3"><img src="img/img&#45;6.jpg" alt="Image 6"></li> -->
+				<!-- <li class="mix color&#45;2 check2 radio2 option1"><img src="img/img&#45;7.jpg" alt="Image 7"></li> -->
+				<!-- <li class="mix color&#45;1 check1 radio3 option4"><img src="img/img&#45;8.jpg" alt="Image 8"></li> -->
+				<!-- <li class="mix color&#45;2 check1 radio2 option3"><img src="img/img&#45;9.jpg" alt="Image 9"></li> -->
+				<!-- <li class="mix color&#45;1 check3 radio2 option4"><img src="img/img&#45;10.jpg" alt="Image 10"></li> -->
+				<!-- <li class="mix color&#45;1 check3 radio3 option2"><img src="img/img&#45;11.jpg" alt="Image 11"></li> -->
+				<!-- <li class="mix color&#45;2 check1 radio3 option1"><img src="img/img&#45;12.jpg" alt="Image 12"></li> -->
+        <li class="gap"></li>
+				<li class="gap"></li>
+				<li class="gap"></li>
+			</ul>
+
+			<div class="cd-fail-message">No results found</div>
+		</section> <!-- cd-gallery -->
+
+		<div class="cd-filter">
+			<form>
+				<div class="cd-filter-block">
+					<h4>Search</h4>
+
+					<div class="cd-filter-content">
+						<input type="search" placeholder="Search by category">
+					</div> <!-- cd-filter-content -->
+				</div> <!-- cd-filter-block -->
+
+				<div class="cd-filter-block">
+					<h4>Cities</h4>
+
+					<ul class="cd-filter-content cd-filters list">
+						<li>
+							<input class="filter" data-filter=".brussels" type="checkbox" id="checkbox1">
+			    			<label class="checkbox-label" for="checkbox1">Brussels</label>
+						</li>
+
+						<li>
+							<input class="filter" data-filter=".antwerp" type="checkbox" id="checkbox2">
+							<label class="checkbox-label" for="checkbox2">Antwerp</label>
+						</li>
+
+						<li>
+							<input class="filter" data-filter=".amsterdam" type="checkbox" id="checkbox3">
+							<label class="checkbox-label" for="checkbox3">Amsterdam</label>
+						</li>
+					</ul> <!-- cd-filter-content -->
+				</div> <!-- cd-filter-block -->
+
+				<div class="cd-filter-block">
+					<h4>Select</h4>
+					<div class="cd-filter-content">
+						<div class="cd-select cd-filters">
+							<select class="filter" name="selectThis" id="selectThis">
+								<option value="">Choose an option</option>
+								<option value=".soon">This week</option>
+								<option value=".nextweek">Next week</option>
+								<option value=".nextmonth">Next Month</option>
+							</select>
+						</div> <!-- cd-select -->
+					</div> <!-- cd-filter-content -->
+				</div> <!-- cd-filter-block -->
+
+				<div class="cd-filter-block">
+					<h4>Radio buttons</h4>
+
+					<ul class="cd-filter-content cd-filters list">
+						<li>
+							<input class="filter" data-filter="" type="radio" name="radioButton" id="radio1" checked>
+							<label class="radio-label" for="radio1">All</label>
+						</li>
+
+						<li>
+							<input class="filter" data-filter=".radio2" type="radio" name="radioButton" id="radio2">
+							<label class="radio-label" for="radio2">Choice 2</label>
+						</li>
+
+						<li>
+							<input class="filter" data-filter=".radio3" type="radio" name="radioButton" id="radio3">
+							<label class="radio-label" for="radio3">Choice 3</label>
+						</li>
+					</ul> <!-- cd-filter-content -->
+				</div> <!-- cd-filter-block -->
+			</form>
+
+			<a href="#0" class="cd-close">Close</a>
+		</div> <!-- cd-filter -->
+
+		<a href="#0" class="cd-filter-trigger">Filters</a>
+	</main> <!-- cd-main-content -->
+
+  <div class="cd-quick-view">
+    <div class="cd-slider-wrapper">
+      <ul class="cd-slider">
+        <li><img src="img/category_typescript.jpg" alt="Product 1"></li>
+      </ul> <!-- cd-slider -->
+
+    </div> <!-- cd-slider-wrapper -->
+
+    <div class="cd-item-info">
+      <h2>Produt Title</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, omnis illo iste ratione. Numquam eveniet quo, ullam itaque expedita impedit. Eveniet, asperiores amet iste repellendus similique reiciendis, maxime laborum praesentium.</p>
+
+      <ul class="cd-item-action">
+        <li><button class="add-to-cart">Join</button></li>					
+        <li><a href="#0">Follow</a></li>	
+      </ul> <!-- cd-item-action -->
+    </div> <!-- cd-item-info -->
+    <a href="#0" class="cd-close">Close</a>
+  </div> <!-- cd-quick-view -->
+
+  <div class="cd-user-modal"> <!-- this is the entire modal form, including the background -->
+    <div class="cd-user-modal-container"> <!-- this is the container wrapper -->
+      <ul class="cd-switcher">
+        <li><a href="#0">Sign in</a></li>
+        <li><a href="#0">New account</a></li>
+      </ul>
+
+      <div id="cd-login"> <!-- log in form -->
+        <form class="cd-form">
+          <p class="fieldset">
+          <label class="image-replace cd-email" for="signin-email">E-mail</label>
+          <input class="full-width has-padding has-border" id="signin-email" type="email" placeholder="E-mail">
+          <span class="cd-error-message">Error message here!</span>
+          </p>
+
+          <p class="fieldset">
+          <label class="image-replace cd-password" for="signin-password">Password</label>
+          <input class="full-width has-padding has-border" id="signin-password" type="text"  placeholder="Password">
+          <a href="#0" class="hide-password">Hide</a>
+          <span class="cd-error-message">Error message here!</span>
+          </p>
+
+          <p class="fieldset">
+          <input type="checkbox" id="remember-me" checked>
+          <label for="remember-me">Remember me</label>
+          </p>
+
+          <p class="fieldset">
+          <input class="full-width" type="submit" value="Login">
+          </p>
+        </form>
+
+        <p class="cd-form-bottom-message"><a href="#0">Forgot your password?</a></p>
+        <!-- <a href="#0" class="cd-close-form">Close</a> -->
+      </div> <!-- cd-login -->
+
+      <div id="cd-signup"> <!-- sign up form -->
+        <form class="cd-form">
+          <p class="fieldset">
+          <label class="image-replace cd-username" for="signup-username">Username</label>
+          <input class="full-width has-padding has-border" id="signup-username" type="text" placeholder="Username">
+          <span class="cd-error-message">Error message here!</span>
+          </p>
+
+          <p class="fieldset">
+          <label class="image-replace cd-email" for="signup-email">E-mail</label>
+          <input class="full-width has-padding has-border" id="signup-email" type="email" placeholder="E-mail">
+          <span class="cd-error-message">Error message here!</span>
+          </p>
+
+          <p class="fieldset">
+          <label class="image-replace cd-password" for="signup-password">Password</label>
+          <input class="full-width has-padding has-border" id="signup-password" type="text"  placeholder="Password">
+          <a href="#0" class="hide-password">Hide</a>
+          <span class="cd-error-message">Error message here!</span>
+          </p>
+
+          <p class="fieldset">
+          <input type="checkbox" id="accept-terms">
+          <label for="accept-terms">I agree to the <a href="#0">Terms</a></label>
+          </p>
+
+          <p class="fieldset">
+          <input class="full-width has-padding" type="submit" value="Create account">
+          </p>
+        </form>
+
+        <!-- <a href="#0" class="cd-close-form">Close</a> -->
+      </div> <!-- cd-signup -->
+
+      <div id="cd-reset-password"> <!-- reset password form -->
+        <p class="cd-form-message">Lost your password? Please enter your email address. You will receive a link to create a new password.</p>
+
+        <form class="cd-form">
+          <p class="fieldset">
+          <label class="image-replace cd-email" for="reset-email">E-mail</label>
+          <input class="full-width has-padding has-border" id="reset-email" type="email" placeholder="E-mail">
+          <span class="cd-error-message">Error message here!</span>
+          </p>
+
+          <p class="fieldset">
+          <input class="full-width has-padding" type="submit" value="Reset password">
+          </p>
+        </form>
+
+        <p class="cd-form-bottom-message"><a href="#0">Back to log-in</a></p>
+      </div> <!-- cd-reset-password -->
+      <a href="#0" class="cd-close-form">Close</a>
+    </div> <!-- cd-user-modal-container -->
+  </div> <!-- cd-user-modal -->
+
+  <script src="js/jquery-2.1.1.js"></script>
+  <script src="js/jquery.mixitup.min.js"></script>
+  <script src="js/main.js"></script> <!-- Resource jQuery -->
+  <script src="js/video.js"></script> <!-- Resource jQuery -->
+  <!-- <script src="js/items&#45;quick&#45;view.js"></script> <!&#45;&#45; Resource jQuery &#45;&#45;> -->
+  <script src="js/velocity.min.js"></script> <!-- Velocity-->
+  <script src="js/product-quick-view.js"></script> <!-- Resource jQuery -->
+  <script src="js/login.js"></script> <!-- Resource jQuery -->
+</body>
+</html>
