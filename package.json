@@ -1,0 +1,29 @@
+{
+  "name": "web.hacklunch",
+  "version": "0.0.1",
+  "description": "web apps for hacklunch",
+  "main": "index.js",
+  "scripts": {
+    "test": "hackages test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pullstream/web.hacklunch.git"
+  },
+  "keywords": [
+    "react",
+    "hackages",
+    "hacklunch",
+    "community"
+  ],
+  "author": "007@hackages.io",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pullstream/web.hacklunch/issues"
+  },
+  "homepage": "https://github.com/pullstream/web.hacklunch#readme",
+  "dependencies": {
+    "react": "^15.0.0",
+    "react-dom": "^15.0.0"
+  }
+}
